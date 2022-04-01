@@ -1,0 +1,71 @@
+/*==========================================
+Global Styles
+==========================================*/
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #fffbf2;
+  font-family: "Poppins", sans-serif;
+}
+
+.maintxt {
+  position: relative;
+}
+.maintxt > img,
+.overlay-text {
+  position: absolute;
+}
+/*==========================================
+Typography
+==========================================*/
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7b5719;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+*::selection {
+  background-color: #f4e2b5;
+}
+
+/*==========================================
+Global Navigation
+==========================================*/
+
+.navbar-toggler {
+  border: none;
+}
+
+/*==========================================
+Banner
+==========================================*/
+
+/*==========================================
+Footer
+==========================================*/
+footer {
+  background-color: #7b5719;
+}
+
+/*==========================================
+==========================================
+Media
+==========================================
+==========================================*/
