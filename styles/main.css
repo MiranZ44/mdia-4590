@@ -19,6 +19,19 @@ body {
 .overlay-text {
   position: absolute;
 }
+
+.card {
+  border-radius: 0.8rem;
+}
+
+.card-img-top {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.btn {
+  border-radius: 5rem;
+}
 /*==========================================
 Typography
 ==========================================*/
@@ -36,9 +49,19 @@ h2 {
   font-family: "Poppins", sans-serif;
 }
 
+h5 {
+  color: #7b5719;
+}
+
 p {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.8rem;
+}
+
+.adopt,
+p {
+  color: #333333;
+  font-weight: 100;
 }
 
 *::selection {
