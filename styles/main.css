@@ -12,14 +12,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.maintxt {
-  position: relative;
-}
-.maintxt > img,
-.overlay-text {
-  position: absolute;
-}
-
 .card {
   border-radius: 0.8rem;
 }
@@ -32,6 +24,30 @@ body {
 .btn {
   border-radius: 5rem;
 }
+
+div.card.h-100 {
+  color: #7b5719;
+}
+
+.page-item.active .page-link {
+  background-color: #cbb99a;
+  border-color: #cbb99a;
+}
+
+.page-link {
+  color: #cbb99a;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
 /*==========================================
 Typography
 ==========================================*/
@@ -58,6 +74,10 @@ p {
   font-size: 0.8rem;
 }
 
+p.banner {
+  color: #ffffff;
+}
+
 .adopt,
 p {
   color: #333333;
@@ -74,6 +94,19 @@ Global Navigation
 
 .navbar-toggler {
   border: none;
+}
+
+.header {
+  background-color: #fffbf2;
+}
+
+.ftr.navbar {
+  background-color: #7b5719;
+}
+
+.navbar,
+img {
+  width: 50%;
 }
 
 /*==========================================
