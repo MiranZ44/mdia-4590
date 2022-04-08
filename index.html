@@ -36,13 +36,13 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="adopt.html" style="color: #7B5719;">Adopt</a>
+                    <a class="nav-link" href="adopt.html">Adopt</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html" style="color: #7B5719;">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html" style="color: #7B5719;">Contact</a>
+                    <a class="nav-link" href="about.html">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -54,32 +54,34 @@
           <div class="row">
             <div class="img-fluid banner-img home-banner" alt="Banner of Home"></div>
             <div>
-                <h1>Are You Looking For a New Family?</h1>
-                <p class="banner">All dogs deserve happy life with families, free from the threat of violence, hunger and unnecessary childbirth.</p>
-                <div class="text-center">
-                  <a href="adopt.html"><button type="button" class="btn py-2 px-5" style="background-color: #ffffff; color: #7B5719">Adopt Now</button></a>
-                </div>
+                <h1>Are You Looking For<br> a New Family?</h1>
+                <p class="banner">All dogs deserve happy life with families,<br> free from the threat of violence,<br> hunger and unnecessary childbirth.</p>
+                  <!-- <a href="adopt.html">
+                    <button type="button" class="btn py-2 px-5" style="background-color: #ffffff; color: #7B5719">
+                      Adopt Now
+                    </button>
+                  </a> -->
+                  <a href="adopt.html" class="btn">Adopt Now</a>
             </div>
           </div>
         </section>
         
-
-
         <!-- adopt -->
         <section class="adopt container col-8">
-            <h2 class="text-center">Adopt</h2>
-            <p class="text-center pb-2" style="color:#7B5719; font-weight: 100;">Give a dog forever home and family</p>
+            <div class="container-title">
+              <h2>Adopt</h2>
+              <h3>see more</h3>
+            </div>
+            <p class="pb-2 is-block" style="color:#7B5719; font-weight: 100;">Give a dog forever home and family</p>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                 <div class="col">
                     <div class="card h-100">
                         <img src="img/1.png" class="card-img-top" alt="dog's photo">
                         <div class="card-body">
-  
                             <div class="d-flex justify-content-between align-self-baseline">
                               <h5 class="card-title">Buddy</h5> 
-                              <p>Metrotown</p>
-                            </div>
-                          
+                              <p class="card-city">Metrotown</p>
+                            </div>                        
                             <p class="card-text">Miniature Pinscher</p>
                         </div>
                     </div>
@@ -91,7 +93,7 @@
 
                           <div class="d-flex justify-content-between align-self-baseline">
                             <h5 class="card-title">Chloe</h5>
-                            <p>Richmond</p>
+                            <p class="card-city">Richmond</p>
                           </div>
                       
                             <p class="card-text">Pembroke Welsh Corgi</p>
@@ -104,7 +106,7 @@
                         <div class="card-body">
                           <div class="d-flex justify-content-between align-self-baseline">
                             <h5 class="card-title">Bomi</h5>
-                            <p>King George</p>
+                            <p class="card-city">King George</p>
                           </div>
                             <p class="card-text">Shiba</p>
                         </div>
@@ -119,7 +121,7 @@
                         <div class="card-body">
                           <div class="d-flex justify-content-between align-self-baseline">
                             <h5 class="card-title">Nacho</h5>
-                            <p>Lougheed</p>
+                            <p class="card-city">Lougheed</p>
                           </div>
                             <p class="card-text">Golden Retriever</p>
                         </div>
@@ -131,7 +133,7 @@
                         <div class="card-body">
                           <div class="d-flex justify-content-between align-self-baseline">
                             <h5 class="card-title">Milo</h5>
-                            <p>Nanaimo</p>
+                            <p class="card-city">Nanaimo</p>
                           </div>
                             <p class="card-text">Jack Russell Terrier</p>
                         </div>
@@ -143,7 +145,7 @@
                         <div class="card-body">
                           <div class="d-flex justify-content-between align-self-baseline">
                             <h5 class="card-title">Pancho</h5>
-                            <p>Brentwood</p>
+                            <p class="card-city">Brentwood</p>
                           </div>
                             <p class="card-text">Pug</p>
                           
@@ -152,49 +154,44 @@
                 </div>
             </div>
 
-            <div class="text-center">
+            <!-- <div class="text-center">
               <a href="adopt.html"><button type="button" class="btn py-2 my-5 px-5" style="background-color: #7B5719; color: #ffffff">See More</button></a>
-            </div>
+            </div> -->
         </section>
 
         <!-- about us -->
-        <section class="container col-8">
+        <section class="container col-8 aboutus-section">
           <div class="row text-center">
-            <img class="img-fluid" src="img/aboutus.jpg" alt="About Us Section">
+            <div class="img-fluid banner-img banner-aboutus" alt="About Us Section"></div>
             <div>
-                <h2>About Us</h2>
-                <p>We give a lifeline for dogs</p>
-                <p>aDOGpt is a nonprofit to help stray and abandoned dogs to increase life-saving by adoption. We help dogs who need homes through our website. We assist more than 10,000 dogs in need every year and are funded by our sponsors to enhance the quality of life for stray and abandoned dogs. We are committed to achievingb transparency and accountability in all our activities.</p>
+                <h2 class="aboutus-title">About Us</h2>
+                <p class="is-block">We give a lifeline for dogs</p>
+                <p class="aboutus-content">aDOGpt is a nonprofit to help stray and abandoned dogs to increase life-saving by adoption. We help dogs who need homes through our website. We assist more than 10,000 dogs in need every year and are funded ...<span class="border-btm">see more.</span></p>
             </div>
           </div>
         </section>
         
         <!-- Contact -->
         <section class="col-8 container">
-          <h2 class="text-center">Contact</h2>
-          <p class="text-center">Feel free to contact us if you have any questions</p>
-
+          <h2 class="contactus-title">Contact</h2>
+          <p class="text-center is-block">Feel free to contact us if you have any questions</p>
           <div class="row g-3 mb-3">
             <div class="col">
-              <input style="border-radius: 13px;" type="text" class="form-control" placeholder="First name" aria-label="First name">
+              <input type="text" class="form-control" placeholder="First Name" aria-label="First name">
             </div>
             <div class="col">
-              <input style="border-radius: 13px;" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name">
             </div>
           </div>
-
           <div class="col mb-3">
-            <input style="border-radius: 13px;" type="text" class="form-control" placeholder="Email Address" aria-label="Last name">
+            <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address">
           </div>
-
           <div class="col mb-1">
-            <input style="border-radius: 13px;" type="text" class="form-control" placeholder="Message" aria-label="Last name">
+            <input type="text" class="form-control" placeholder="Message" aria-label="Message">
           </div>
-
           <div class="text-center">
-            <a href="adopt.html"><button type="button" class="btn py-2 my-5 px-5" style="background-color: #7B5719; color: #ffffff">Submit</button></a>
+              <a href="adopt.html" class="btn btn2">Submit</a>
           </div>
-
         </section>
 
 

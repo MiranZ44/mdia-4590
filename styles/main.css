@@ -14,15 +14,35 @@ body {
 
 .card {
   border-radius: 0.8rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .card-img-top {
   border-top-left-radius: 0.8rem;
-  border-top-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  max-width: 40%;
+  flex-basis: 40%;
+}
+
+.card-body{
+  max-width: 60%;
+  flex-basis: 60%;
+}
+
+.card-city{
+  font-size: 12px;
+  padding-top: 4px;
 }
 
 .btn {
   border-radius: 5rem;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #FFFFFF;
+  margin-bottom: 30px;
+  color: #7b5719;
+  font-weight: 600;
 }
 
 div.card.h-100 {
@@ -48,34 +68,92 @@ div.card.h-100 {
   border-bottom-left-radius: 0.5rem;
 }
 
+.border-btm{
+  border-bottom: 1px solid white;
+}
+
+.form-control{
+  border: 0.5px solid #7B5719;
+  font-size: 12px;
+  font-weight: 200;
+  color: #b8ad9b;
+  padding: 10px 10px;
+  border-radius: 11px;
+}
+
+.aboutus-section{
+  margin-top: 50px;
+}
+
+.btn2{
+  background-color: #7b5719;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: white;
+}
 /*==========================================
 Typography
 ==========================================*/
 h1 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 26px;
+  font-weight: 600;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
+  padding-top: 20px;
+}
+
+.container-title{
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 22px;
   font-weight: 700;
   color: #7b5719;
   font-family: "Poppins", sans-serif;
+  display: inline-block;
+}
+
+h3{
+  font-size: 14px;
+  font-weight: 400;
+  float: right;
+  align-self: center;
+  color: #333333;
+  margin-left: auto;
 }
 
 h5 {
   color: #7b5719;
 }
 
+.is-block{
+  display: none;
+}
+
+.nav-link{
+  color: #FFFFFF;
+}
+
 p {
   color: #ffffff;
-  font-size: 0.8rem;
+  /* font-size: 15px;
+  padding: 15px 0; */
 }
 
 p.banner {
   color: #ffffff;
+  font-size: 15px;
+  padding: 10px 0;
 }
 
 .adopt,
@@ -94,6 +172,8 @@ Global Navigation
 
 .navbar-toggler {
   border: none;
+  float: right;
+  padding: 20px 0;
 }
 
 .header {
@@ -104,9 +184,27 @@ Global Navigation
   background-color: #7b5719;
 }
 
-.navbar,
-img {
-  width: 50%;
+.navbar{
+  padding: 0;
+}
+
+.navbar img{
+  width: 100%;
+  padding: 20px 0;
+}
+
+.navbar .container-fluid{
+  display: block;
+  margin-bottom: 20px;
+  background-color: #7B5719;
+}
+
+.navbar .navbar-brand img{
+  max-width: 70px;
+}
+
+.col-8{
+  width: 100%;
 }
 
 /*==========================================
@@ -124,12 +222,17 @@ Banner
   background-image: url('../img/banner1.png');
 }
 
-.about-banner{
+.adopt-banner{
   background-image: url('../img/banner2.png');
 }
 
-.adopt-banner{
+.about-banner{
   background-image: url('../img/banner3.png');
+  height: 500px;
+}
+
+.about-banner2{
+  background-image: url('../img/sponsor.png');
 }
 
 .container .row{
@@ -147,13 +250,50 @@ Banner
   position: absolute;
 }
 
-.container .banner-img::after{
+.home-banner::before, .adopt-banner::before, .about-banner::before{
   content: '';
-  position: relative;
-  background-color: rgb(0,0,0,.5);
-  background-color: rebeccapurple;
+  position: absolute;
+  background-color: rgb(0,0,0,.3);
   width: 100%;
-  height: auto;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.aboutus-title{
+  padding-top: 30px;
+}
+
+.banner-aboutus{
+  background-image: url('../img/aboutus.jpg');
+}
+
+.aboutus-content{
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+.contactus-title{
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.about-title{
+  display: block;
+  padding-top: 20px;
+}
+
+.about-subtitle{
+  font-size: 12px;
+  text-align: center;
+}
+
+.aboutus-paragraph{
+  font-size: 15px;
 }
 
 
@@ -161,6 +301,7 @@ Banner
 Footer
 ==========================================*/
 footer {
+  display: none;
   background-color: #7b5719;
 }
 
@@ -178,14 +319,39 @@ Media
 
 }
 
-/* @media (min-width: 768px){
-  
+@media (min-width: 768px){
+
+  footer {
+    display: block;
+  }
+
 }
 
-@media (min-width: 992px){
-  
-}
-
-@media (min-width: 1100px){
+/* @media (min-width: 992px){
   
 } */
+
+@media (min-width: 1100px){
+
+  .is-block{
+    display: block;
+  }
+
+  .adopt h2{
+    text-align: left;
+  }
+
+  .card{
+    display: block;
+  }
+
+  .card-img-top {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  
+  .card-body{
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
