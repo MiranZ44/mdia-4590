@@ -167,6 +167,10 @@ p {
   background-color: #f4e2b5;
 }
 
+p.card-city {
+  color: #7b5719;
+  font-weight: 400;
+}
 /*==========================================
 Global Navigation
 ==========================================*/
