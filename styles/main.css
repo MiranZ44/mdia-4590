@@ -98,6 +98,7 @@ div.card.h-100 {
 .navbar-light .navbar-nav .nav-link{
   color: white;
 }
+
 /*==========================================
 Typography
 ==========================================*/
@@ -276,6 +277,10 @@ Banner
   padding-bottom: 20px;
 }
 
+.aboutus-content2{
+  display: none;
+}
+
 .contactus-title{
   display: block;
   padding: 20px 0;
@@ -296,6 +301,19 @@ Banner
   font-size: 15px;
 }
 
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #fffbf2;
+} 
+
+.mission-display{
+  display: none;
+}
+
+.sponsor-img{
+  width: 300px;
+  padding-bottom: 40px;
+}
+
 
 /*==========================================
 Footer
@@ -311,13 +329,9 @@ Media
 ==========================================
 ==========================================*/
 
-@media (min-width: 576px){
+/* @media (min-width: 576px){
 
-  .container h1{
-    /* font-size: 20px; */
-  }
-
-}
+} */
 
 @media (min-width: 768px){
 
@@ -333,12 +347,103 @@ Media
 
 @media (min-width: 1100px){
 
+  h1 {
+    font-size: 43px;
+    padding: 50px 0 0 70px;
+    line-height: 55px;
+  }
+  
+  /* .container-title{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #7b5719;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+  }
+  
+  h3{
+    font-size: 14px;
+    font-weight: 400;
+    float: right;
+    align-self: center;
+    color: #333333;
+    margin-left: auto;
+  } */
+  
+  h5 {
+    color: #7b5719;
+  }
+
+  p.banner{
+    padding: 10px 0 10px 70px;
+  }
+
+  .btn{
+    margin: 20px 0 50px 70px;
+  }
+  
+  .adopt-banner-title{
+    padding: 100px 0 0 70px;
+  }
+
+  .banner.adopt-banner-pg{
+    padding: 10px 0 70px 70px;
+  }
+
+  .navbar-collapse .nav-link a{
+    color: #7b5719;
+  }
+
+  .navbar-collapse .nav-link{
+    padding-top: 22px;
+  }
+
+  .navbar-expand-lg .navbar-collapse{
+    float: right;
+  }
+
+  .nav-link:hover{
+    border-bottom: 1px solid #fffbf2;
+  }
+
   .is-block{
     display: block;
+    text-align: center;
+    color: #fffbf2;
+  }
+
+  .aboutus-title{
+    color: #fffbf2;
+  }
+
+  .aboutus-paragraph{
+    font-size: 17px;
+    font-weight: 300;
+    padding: 0 100px;
   }
 
   .adopt h2{
-    text-align: left;
+    display: block;
+    margin: 0 auto;
+    padding-top: 60px;
+    font-size: 33px;
+  }
+  
+  .adopt-seemore{
+    display: none;
+  }
+
+  .btn3{
+    background-color: #7b5719;
+    color: white;
+    margin: 50px auto 10px;
+    width: 140px;
   }
 
   .card{
@@ -354,4 +459,95 @@ Media
     max-width: 100%;
     flex-basis: 100%;
   }
+
+  .btn-hover1:hover{
+    background-color: #7b5719;
+    color: #FFFFFF;
+  }
+
+  .btn3:hover{
+    background-color: #fffbf2;
+    color: #7b5719;
+    border: 1px solid #7b5719;
+  }
+
+  .adopt-seemore:hover{
+    background-color: #fffbf2;
+    color: #7b5719;
+  }
+
+  .aboutus-title{
+    font-size: 33px;
+    padding-top: 120px;
+    color: #7b5719;
+  }
+
+  .about-subtitle{
+    font-size: 17px;
+    padding-bottom: 20px;
+  }
+
+  .sponsor-title{
+    font-size: 33px;
+    padding-top: 90px;
+  }
+
+  .sponsor-img{
+    width: 900px;
+    padding-bottom: 90px;
+  }
+
+  .about-title{
+    padding-top: 80px;
+    font-size: 33px;
+  }
+
+  .contactus-title{
+    font-size: 33px;
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+
+  .aboutus-content{
+    display: none;
+  }
+
+  .aboutus-content2{
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 170px 100px;
+  }
+
+  .is-block.contact-subtitle{
+    color: #7b5719;
+    padding-bottom: 20px;
+  }
+
+  .contact-form{
+    max-width: 600px;
+  }
+
+  .btn2{
+    margin: 20px auto 90px;
+  }
+
+  .btn4{
+    margin: 20px auto 90px;
+  }
+
+  .mission-display{
+    display: block;
+  }
+
+  .mission-title{
+    padding-bottom: 10px;
+  }
+
+  .card-img-top{
+    border-top-right-radius: 0.8rem;
+    border-bottom-left-radius: 0;
+  }
+
 }
