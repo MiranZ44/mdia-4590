@@ -265,8 +265,9 @@ Banner
   z-index: 999;
 }
 
-.aboutus-title {
+h2.aboutus-title {
   padding-top: 30px;
+  color: #fffbf2;
 }
 
 .banner-aboutus {
