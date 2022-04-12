@@ -99,6 +99,10 @@ div.card.h-100 {
   color: white;
 }
 
+a.nav-link {
+  color:#fffbf2 !important;
+}
+
 /*==========================================
 Typography
 ==========================================*/
@@ -201,7 +205,7 @@ Global Navigation
 .navbar .container-fluid {
   display: block;
   margin-bottom: 20px;
-  background-color: #7b5719;
+  background-color:#7b5719;
 }
 
 .navbar .navbar-brand img {
@@ -356,6 +360,7 @@ Media
     padding: 50px 0 0 70px;
     line-height: 55px;
   }
+
 
   /* .container-title{
     width: 100%;
@@ -553,4 +558,28 @@ Media
     border-top-right-radius: 0.8rem;
     border-bottom-left-radius: 0;
   }
+}
+
+@media (min-width: 992px) {
+
+  a.nav-link.foo {
+    color:#fffbf2 !important;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .navbar .container-fluid {
+    background-color: #fffbf2;
+  }
+
+  a.nav-link {
+    color:#7b5719 !important;
+  }
+
+  .navbar .footer {
+    background-color:#7b5719;
+  }
+
 }
