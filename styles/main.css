@@ -12,10 +12,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 .card {
   border-radius: 0.8rem;
   display: flex;
   flex-direction: row;
+  border: 1px solid #7b5719;
 }
 
 .card-img-top {
@@ -322,6 +327,18 @@ h2.aboutus-title {
   padding-bottom: 40px;
 }
 
+.btn4{
+  display: none;
+}
+
+.btn5{
+  display: none;
+}
+
+.border{
+  border: 1px solid #7b5719!important
+}
+
 /*==========================================
 Footer
 ==========================================*/
@@ -341,6 +358,11 @@ Media
 } */
 
 @media (min-width: 768px) {
+
+  /* .navbar .container-fluid{
+    background: #fffbf2;
+  } */
+
   footer {
     display: block;
   }
@@ -533,12 +555,23 @@ Media
     max-width: 600px;
   }
 
-  .btn2 {
+  .btn2, .btn4 {
     margin: 20px auto 90px;
+    max-width: 150px;
   }
 
-  .btn4 {
-    margin: 20px auto 90px;
+  .btn5 {
+    border-radius: 5rem;
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: #7b5719;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    border-style: none;
+    margin: 20px auto;
+    max-width: 140px;
   }
 
   .mission-display {
