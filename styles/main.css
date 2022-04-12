@@ -343,6 +343,25 @@ h2.aboutus-title {
   border: 1px solid #7b5719!important
 }
 
+.btn{
+  transition-duration: 0.3s;
+}
+
+.btn:hover{
+  background-color: #7b5719;
+  color: #fffbf2;
+}
+
+.btn2:hover{
+  background-color: #fffbf2;
+  color: #7b5719;
+  border: 1px solid #7b5719;
+}
+
+.page-item:not(:first-child) .page-link:hover{
+  color: #7b5719;
+}
+
 /*==========================================
 Footer
 ==========================================*/
